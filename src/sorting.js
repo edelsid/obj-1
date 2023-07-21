@@ -1,9 +1,7 @@
-export let prop;
-
 export default function orderAlgorithm(obj, sortingOrder) {
   const sorted = [];
   const remained = [];
-  for (prop in obj) {
+  for (const prop in obj) {
     if (sortingOrder.includes(prop)) {
       sorted.push({ key: prop, value: obj[prop] });
     } else {
